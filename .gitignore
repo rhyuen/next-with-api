@@ -1,0 +1,5 @@
+.vercel
+.next
+keys.json
+.env
+node_modules

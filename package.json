@@ -1,0 +1,27 @@
+{
+  "name": "withapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^0.16.0",
+    "axios": "^0.20.0",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.51",
+    "dotenv": "^8.2.0",
+    "typescript": "^4.0.3"
+  }
+}
