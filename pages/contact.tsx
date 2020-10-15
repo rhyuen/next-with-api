@@ -11,7 +11,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(email);
-        const res = await axios.post({ email: email });
+        const res = await axios.post("", { email: email });
         res.data.
             setEmail("");
     }

@@ -1,6 +1,6 @@
 
 
-export default ({ children }) => {
+export default function Footer() {
     return (
         <footer>
             footer

@@ -9,7 +9,7 @@ import auth0 from "../utils/auth0";
 export default function Index(props) {
     console.log(props);
 
-    const [data, setData] = useState("");
+    const [data, setData] = useState<any>("");
 
     useEffect(() => {
         fetch("/api/person")
@@ -39,8 +39,6 @@ export default function Index(props) {
                             </div>
                         )
                 }
-
-
 
                 <p>i'm {data.message}</p>
             </div>
