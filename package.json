@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
-    "start": "next start",
-    "build": "next build"
+    "dev": "NODE_ENV=development next",
+    "start": "NODE_ENV=production next start",
+    "build": "NODE_ENV=production next build",
+    "deploy": "vercel --prod"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,6 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.51",
-    "dotenv": "^8.2.0",
     "typescript": "^4.0.3"
   }
 }
