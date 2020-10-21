@@ -1,19 +1,22 @@
 import Head from "next/head";
 import Nav from "./nav";
 import Footer from "./footer";
+import Grid from "./grid";
+
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <>
             <Head>
                 <title>Fifi's, where you can buy feelings.</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></meta>
-                <link rel="icon" href="" type="image/png" />
+                <link rel="icon" href="./favicon.png" type="image/png" />
             </Head>
-            <Nav />
-            <section>
+
+            <Grid>
+                <Nav />
                 {children}
-            </section>
+            </Grid>
             <Footer></Footer>
             <style jsx global>{`
                 * {
@@ -26,6 +29,6 @@ export default function Layout({ children }) {
                     margin: 0;                    
                 }
             `}</style>
-        </div>
+        </>
     )
 }

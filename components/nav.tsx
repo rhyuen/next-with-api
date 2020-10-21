@@ -22,17 +22,16 @@ export default function Nav() {
             </ul>
             <style jsx>{`
                 nav{       
-                    height: 5vw;      
-                    background: black;       
-                }
+                    grid-column: 1/12;
+                    background-color: white;
+                }              
 
                 ul{
                     
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    height: 100%;
-                    max-width: 1080px;
+                    height: 100%;                    
                     margin: 0 auto;
                 }
 
@@ -47,15 +46,15 @@ export default function Nav() {
                     text-decoration: none;
                     padding-bottom: 8px;
                     font-weight: 600;
-                    color: white;
+                    color: black;
                     border-bottom: 2px solid transparent;
                     transition: border-bottom-color 0.2s ease-in;
                 }
                 a:visited{
-                    color: white;
+                    color: black;
                 }
                 a:hover{
-                    border-bottom-color: white;
+                    border-bottom-color: black;
                 }
                 
             `}</style>

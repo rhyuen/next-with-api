@@ -1,6 +1,8 @@
 import Layout from "../components/layout";
 import { useState, useEffect } from "react";
 import auth0 from "../utils/auth0";
+import Landing from "../components/landing";
+import Authed from "../components/authed";
 
 
 
@@ -25,21 +27,11 @@ export default function Index(props) {
     return (
         <Layout>
             <div>
-                <h1>i'm an index</h1>
-                <h2>"Welcome to React"</h2>
                 {
                     !props?.session?.user ?
-                        (
-                            <div>
-                                <a href="/api/login">Login</a>
-                            </div>
-                        ) : (
-                            <div>
-                                <a href="/api/logout">Logout</a>
-                            </div>
-                        )
+                        <Landing /> :
+                        <Authed />
                 }
-
                 <p>i'm {data.message}</p>
             </div>
         </Layout>
